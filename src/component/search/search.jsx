@@ -88,7 +88,7 @@ function Search({onSearch}) {
             endde.current.value.replaceAll("-", ""),
             // arr.current.value
             upr_Cd.current.value,
-            processState.current.value
+       
         );
     }
 

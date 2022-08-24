@@ -87,7 +87,7 @@ function Search({onSearch}) {
             bgnde.current.value.replaceAll("-", ""),
             endde.current.value.replaceAll("-", ""),
             // arr.current.value
-            upr_Cd.current.value,
+            upr_Cd.current.value
        
         );
     }

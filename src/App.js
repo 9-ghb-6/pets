@@ -11,7 +11,7 @@ function App() {
   const [selected, setSelected] = useState();
   useEffect(() => {
     const key = process.env.REACT_APP_API_KEY;
-    fetch(`http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30`)
+    fetch(`https://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30`)
       .then(response => response.json())  // 중괄호를 사용시 즉시리턴시켜준다는 뜻이다.
       .then(json => {
         // console.log(json.respose.body.items.item);
@@ -24,7 +24,7 @@ function App() {
 
   const handleSearch = (bgnde, endde, upr_Cd, processState) => {
     const key = "VM4Kq0Mv0x2F3FgDpbg%2BtBok2WUsyxVtx53QPulh8Np2%2BhpgU0ks%2FpczqOSetRGnLMsEVbSn1xssdVvgyyYegA%3D%3D"
-    fetch(`http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30&bgnde=${bgnde}&endde=${endde}&upr_cd=${upr_Cd}&processState=${processState}`)
+    fetch(`https://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${key}&_type=json&numOfRows=30&bgnde=${bgnde}&endde=${endde}&upr_cd=${upr_Cd}&processState=${processState}`)
       .then(response => response.json())  // 중괄호를 사용시 즉시리턴시켜준다는 뜻이다.
       .then(json => {
         // console.log(json.respose.body.items.item);
